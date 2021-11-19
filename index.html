@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        body {
+            background-image: url(/images/pattern-background-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: hsl(225, 100%, 94%);
+            margin: 0px;
+            font-family: "Red Hat Display", sans-serif;
+        }
+        
+        .center {
+            width: 450px;
+            height: 750px;
+            background-color: white;
+            border-radius: 20px;
+            display: grid;
+            text-align: center;
+            margin: auto;
+            margin-top: 60px;
+            padding: 0px;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .center .hero {
+            border-radius: 20px 20px 0px 0px;
+        }
+        
+        .center .paragraph {
+            font-size: 16px;
+            color: gray;
+            padding-top: 0px;
+            text-align: center;
+        }
+        
+        .center .title {
+            font-size: 30px;
+            font-weight: 900;
+        }
+        
+        .center .price-section {
+            background-color: hsl(228, 100%, 98%);
+            width: 300px;
+            height: 80px;
+            border-radius: 10px;
+            margin: auto;
+        }
+        
+        .change {
+            margin-right: 15px;
+            color: hsl(245, 75%, 52%);
+            font-weight: 900;
+            margin-left: 220px;
+            display: grid;
+            margin-top: -57px;
+        }
+        
+        .plan-section {
+            margin: 20px;
+            text-align: left;
+            margin-left: 90px;
+        }
+        
+        .plan {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .price {
+            color: gray;
+        }
+        
+        .music-icon {
+            margin-right: 230px;
+            display: grid;
+            margin-top: -35px;
+            margin-left: 15px;
+        }
+        
+        .center .proceed {
+            background-color: hsl(245, 75%, 52%);
+            color: white;
+            font-size: 17px;
+            height: 50px;
+            width: 370px;
+            margin-left: 40px;
+            border-radius: 10px;
+            font-weight: bold;
+            padding-bottom: -10px;
+            border: solid 0px;
+            box-shadow: 0 10px 20px rgb(17, 0, 255, 30%);
+            margin-bottom: 0px;
+        }
+        
+        .cancel {
+            color: gray;
+            font-size: 17px;
+            font-weight: 900;
+            margin: 0%;
+            text-decoration: none;
+            height: 30px;
+            padding: 0px;
+            width: 150px;
+            margin-left: 150px;
+        }
+        
+        .cancel:hover {
+            color: black;
+        }
+        
+        .proceed:hover {
+            background-color: hsl(245, 75%, 52%, 70%);
+        }
+        
+        .change:hover {
+            color: hsl(245, 75%, 52%, 70%);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <img class="hero" src="/images/illustration-hero.svg" alt="hero" />
+
+        <div class="title">Order Summary</div>
+
+        <div class="paragraph">
+            You can now listen to millions of songs,<br /> audiobooks, and podcasts on any device<br /> anywhere you like!
+        </div>
+
+        <div class="price-section">
+            <div class="plan-section">
+                <div class="plan">Annual Plan</div>
+                <div class="price">$59.99/year</div>
+            </div>
+            <a class="change" href="#">Change</a>
+
+            <img class="music-icon" src="/images/icon-music.svg" alt="music" />
+        </div>
+
+        <button class="proceed" type="submit">Proceed to Payment</button>
+
+        <a href="#" class="cancel">Cancel Order</a>
+    </div>
+    <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+      >. Coded by <a href="#">Nader Hamid</a>.
+    </div>
+</body>
+
+</html>
